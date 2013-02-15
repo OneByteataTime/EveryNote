@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SJENViewController : UIViewController
+@interface SJENViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *urlTextField;
+@property (weak, nonatomic) IBOutlet UIWebView *webViewer;
 
 @end
